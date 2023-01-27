@@ -32,7 +32,11 @@
       "outputPath": ""
     },
     "disableUseStrict": false,
-    "useCompilerPlugins": false,
+    "useCompilerPlugins": [
+      "typescript",
+      "sass",
+      "less"
+    ],
     "minifyWXML": true
   },
   "condition": {},

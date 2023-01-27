@@ -1,5 +1,5 @@
 /*
-此文件为开发者工具生成，生成时间: 2023/1/27 下午10:10:04
+此文件为开发者工具生成，生成时间: 2023/1/27 下午11:14:35
 
 在 /Users/panjiajie/Documents/task/base-mini/pages/index/index.wxss 中引入样式
 ```
@@ -11,8 +11,17 @@
 .sk-transparent {
     color: transparent !important;
   }
-.sk-image {
-    background: #EFEFEF !important;
+.sk-text-0-0000-371 {
+    background-image: linear-gradient(transparent 0.0000%, #EEEEEE 0%, #EEEEEE 100.0000%, transparent 0%) !important;
+    background-size: 100% 28.1250rpx;
+    position: relative !important;
+  }
+.sk-text {
+    background-origin: content-box !important;
+    background-clip: content-box !important;
+    background-color: transparent !important;
+    color: transparent !important;
+    background-repeat: repeat-y !important;
   }
 .sk-container {
     position: absolute;
