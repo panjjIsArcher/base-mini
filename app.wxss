@@ -12,6 +12,6 @@ page{
 view,text{
   font-size: 12px;
   margin: 0;
-  padding:0;
+  padding: 0;
   line-height: 12px;
 }

@@ -1,0 +1,22 @@
+{
+  "name": "base-mini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panjjIsArcher/base-mini.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/panjjIsArcher/base-mini/issues"
+  },
+  "homepage": "https://github.com/panjjIsArcher/base-mini#readme",
+  "dependencies": {
+    "eslint": "^8.32.0"
+  }
+}
