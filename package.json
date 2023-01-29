@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/panjjIsArcher/base-mini#readme",
   "dependencies": {
-    "eslint": "^8.32.0"
+    "eslint": "^8.32.0",
+    "miniprogram-api-typings": "^3.9.0"
   }
 }
