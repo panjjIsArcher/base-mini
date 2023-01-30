@@ -1,5 +1,6 @@
 <view class="container">
     <view class="earth">
-        <image src="../../../src/image/earth.png" />
+        <image src="../../../src/image/earth.png" class="blue" />
+        <image src="../../../src/image/earth.png" class="gray" style="clip-path:{{clipPath}};" />
     </view>
 </view>
