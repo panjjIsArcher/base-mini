@@ -17,7 +17,14 @@
   },
   "homepage": "https://github.com/panjjIsArcher/base-mini#readme",
   "dependencies": {
+    "@miniprogram-i18n/core": "^1.0.0-rc.12",
     "eslint": "^8.32.0",
-    "miniprogram-api-typings": "^3.9.0"
+    "miniprogram-api-typings": "^3.9.0",
+    "weui-miniprogram": "^1.2.7"
+  },
+  "devDependencies": {
+    "@miniprogram-i18n/gulp-i18n-locales": "^1.0.0-rc.12",
+    "@miniprogram-i18n/gulp-i18n-wxml": "^1.0.0-rc.12",
+    "gulp": "^4.0.2"
   }
 }

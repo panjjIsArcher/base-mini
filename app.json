@@ -8,5 +8,8 @@
   },
   "debug": true,
   "sitemapLocation": "sitemap.json",
-  "resizable": false
+  "resizable": false,
+  "useExtendedLib": {
+    "weui": true
+  }
 }
