@@ -1,0 +1,5 @@
+<view class="container">
+    <view class="earth">
+        <image src="../../../src/image/earth.png" />
+    </view>
+</view>

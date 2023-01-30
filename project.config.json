@@ -34,8 +34,8 @@
     "disableUseStrict": false,
     "useCompilerPlugins": [
       "typescript",
-      "sass",
-      "less"
+      "less",
+      "sass"
     ],
     "minifyWXML": true
   },

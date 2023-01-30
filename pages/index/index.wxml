@@ -1,3 +1,1 @@
-
-<import src="./index.skeleton.wxml"/>
-<view>start</view>
+<loading />
