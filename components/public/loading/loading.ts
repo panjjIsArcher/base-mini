@@ -13,6 +13,7 @@ Component({
   methods: {
     complete(progress = 0): string {
       const completeProgress: number = progress * 100;
+      console.log(completeProgress)
       const clipPath: string = `inset(0 0 ${completeProgress}%  0);`
       return clipPath;
     }
@@ -30,8 +31,11 @@ Component({
       if (progress >= 1) {
         return
       }
-      this.complete(progress)
-      this.data.completeProgress = this.properties.progress;
+      this.setData({
+        clipPath: this.complete(progress),
+        imageCompleteProgress: progress
+      })
+
     }
   }
 })

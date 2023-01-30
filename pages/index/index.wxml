@@ -1,1 +1,1 @@
-<loading />
+<loading progress="{{ progress }}" wx:if="{{show}}" />
