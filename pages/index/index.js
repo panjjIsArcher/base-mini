@@ -3,7 +3,7 @@ Page({
   behaviors: [loading],
   onShow() {
     this.setData({
-      progress: 0.1,
+      progress: 0.11,
       show: true
     })
 
