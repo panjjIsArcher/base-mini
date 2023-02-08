@@ -1,3 +1,4 @@
+
 <loading progress="{{ progress }}" wx:if="{{show}}" bind:complete="complete" />
 
 <view class="container" wx:else>
