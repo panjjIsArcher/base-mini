@@ -22,16 +22,19 @@ Component({
       this.setData({
         clipPath: this.complete(this.data.imageCompleteProgress)
       })
-
     }
   },
   observers: {
     progress(progress) {
+      console.log(progress)
       if (progress >= 1) {
+        this.triggerEvent("complete");
         return
       }
-      this.complete(progress)
-      this.data.completeProgress = this.properties.progress;
+      this.setData({
+        clipPath: this.complete(progress),
+        imageCompleteProgress: progress
+      })
     }
   }
 })
