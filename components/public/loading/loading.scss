@@ -1,8 +1,8 @@
-$theme-background:#003153; // 普鲁士蓝 主题色
-$theme-color: #e5ddd7; // 主题色 雾灰色
+
+@import "../../../app.scss";
 
 .container {
-  background-color: $theme-background;
+  background-color: #{$theme-background};
   height: 100%;
   width: 100%;
 
@@ -10,14 +10,14 @@ $theme-color: #e5ddd7; // 主题色 雾灰色
     width: 50vw;
     height: 50vw;
     border-radius: 50%;
-    border-color: $theme-color;
+    border-color:  #{$theme-color};
     border-width: 1px;
     border-style: solid;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: $theme-color;
+    background-color: #{$theme-color};
     // box-shadow:0.15vw 0.15vw 0.21vw 0.15vw $theme-color;
     overflow: hidden;
 

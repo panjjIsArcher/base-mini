@@ -3,8 +3,10 @@
     "pages/index/index"
   ],
   "window": {
-    "navigationBarTitleText": "gis",
-    "pageOrientation": "portrait"
+    "navigationBarTitleText": "GIS",
+    "pageOrientation": "portrait",
+    "navigationBarBackgroundColor":"#003153",
+    "navigationBarTextStyle":"white"
   },
   "debug": true,
   "sitemapLocation": "sitemap.json",

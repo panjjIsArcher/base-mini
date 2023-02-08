@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 <loading progress="{{ progress }}" wx:if="{{show}}" bind:complete="complete" />
+=======
+<loading progress="{{ progress }}" wx:if="{{show}}" bind:complete="complete" />
+
+>>>>>>> 55cb827a04f640323d306e8bdec3f56bf461845a
