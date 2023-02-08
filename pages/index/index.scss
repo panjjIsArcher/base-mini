@@ -1,0 +1,18 @@
+@import "../../app.scss";
+
+.container {
+    // padding: 5vw 4vw ;
+    background-color: rgba($color:$theme-background, $alpha: 0.95);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    .earth{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+}

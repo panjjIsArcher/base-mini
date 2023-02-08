@@ -26,7 +26,7 @@ Component({
   observers: {
     progress(progress) {
       if (progress >= 1) {
-        // this.triggerEvent("complete");
+        this.triggerEvent("complete");
         return;
       }
       this.setData({
