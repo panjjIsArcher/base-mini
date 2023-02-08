@@ -1,11 +1,14 @@
 const loading = require("../../behavior/loading");
 Page({
   behaviors: [loading],
-  onShow() {
+  complete() {
+    this.closeLoading()
+  },
+  onLoad() {
     this.setData({
       progress: 0.1,
-      show: true
+      show: false
     })
 
   }
-})
+}) 

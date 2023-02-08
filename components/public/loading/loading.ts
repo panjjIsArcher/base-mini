@@ -13,7 +13,6 @@ Component({
   methods: {
     complete(progress = 0): string {
       const completeProgress: number = progress * 100;
-      console.log(completeProgress)
       const clipPath: string = `inset(0 0 ${completeProgress}%  0);`
       return clipPath;
     }
@@ -29,6 +28,7 @@ Component({
   observers: {
     progress(progress) {
       if (progress >= 1) {
+        this.triggerEvent("complete")
         return
       }
       this.setData({
