@@ -1,7 +1,18 @@
-
 <loading progress="{{ progress }}" wx:if="{{show}}" bind:complete="complete" />
 
 <view class="container" wx:else>
-    <view class="earth"></view>
+	<view class="earth">
+		<swiper>
+			<swiper-item
+			 wx:for="list"
+			 wx:for-item="item"
+			 class="item"
+			 wx:key="desc"
+			 item-id="desc"
+			>
+				<image src="../../src/image/earth.png" />
+			</swiper-item>
+		</swiper>
+	</view>
 </view>
 

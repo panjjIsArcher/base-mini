@@ -1,18 +1,18 @@
 module.exports = Behavior({
   data: {
-    show: false,
-    progress: 0
+    show: true,
+    progress: 0,
   },
   methods: {
     closeLoading() {
       this.setData({
-        show: false
-      })
+        show: false,
+      });
     },
     showLoading() {
       this.setData({
-        show: true
-      })
-    }
-  }
-})
+        show: true,
+      });
+    },
+  },
+});
