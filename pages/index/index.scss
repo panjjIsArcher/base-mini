@@ -20,11 +20,14 @@
     align-items: centers;
     gap: 2vw;
 
-    image {
+    .image {
       width: 8vw;
       height: 8vw;
       margin: 0 1vw;
-      
+      background-repeat: no-repeat;
+      background-size: 100% 100%; 
+      background-color: red;
+      border-radius: 50%;
     }
 
     .active {
