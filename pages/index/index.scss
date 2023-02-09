@@ -1,16 +1,39 @@
 @import "../../app.scss";
 
 .container {
-    // padding: 5vw 4vw ;
-    background-color: rgba($color:$theme-background, $alpha: 0.95);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    box-sizing: border-box;
+  // padding: 5vw 4vw ;
+  background-color: rgba($color:$theme-background, $alpha: 0.95);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
 
-    .item{
-        background-color: #fff;
+  .swiper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: centers;
+    gap: 2vw;
+
+    image {
+      width: 8vw;
+      height: 8vw;
+      margin: 0 1vw;
+      
     }
+
+    .active {
+      transform: scale(1.5);
+      margin: 0 3vw;
+    }
+  }
+
+  .item {
+    background-color: #fff;
+  }
 }
