@@ -1,13 +1,14 @@
 {
   "pages": [
+    "pages/gis/index",
     "pages/index/index",
-    "pages/gis/index"
+    "pages/author/index"
   ],
   "window": {
     "navigationBarTitleText": "GIS",
     "pageOrientation": "portrait",
-    "navigationBarBackgroundColor":"#003153",
-    "navigationBarTextStyle":"white"
+    "navigationBarBackgroundColor": "#003153",
+    "navigationBarTextStyle": "white"
   },
   "debug": true,
   "sitemapLocation": "sitemap.json",
