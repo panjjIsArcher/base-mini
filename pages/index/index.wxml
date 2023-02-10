@@ -3,7 +3,7 @@
 <view class="container" wx:else>
 	<view class="earth ">
 		<view class="card">
-		
+		{{ active.desc  }}
 		</view>
 		<view class="swiper">
 			<view

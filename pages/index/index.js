@@ -1,4 +1,5 @@
 const loading = require("../../behavior/loading");
+import { navigatoteTo } from "../../util/index"
 Page({
   behaviors: [loading],
   data: {
@@ -28,6 +29,7 @@ Page({
     const item = event.currentTarget.dataset.item;
     const { id } = item;
     if (id === this.data.active.id) {
+      navigatoteTo();
       return;
     }
     this.setData({
@@ -36,7 +38,7 @@ Page({
   },
   onLoad() {
     this.showLoading();
-   
+
     const index = Math.floor(this.data.list.length / 2);
     this.setData({
       active: this.data.list[index],
