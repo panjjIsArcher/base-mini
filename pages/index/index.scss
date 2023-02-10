@@ -1,4 +1,5 @@
 @import "../../app.scss";
+@import "../../src/css/animation.scss";
 
 .container {
   // padding: 5vw 4vw ;
@@ -24,8 +25,9 @@
     background-color: $theme-color;
     border-radius: 3vw;
     top: 30.5%;
-
-
+    padding: 2vw 3vw;
+    font-size: 18px;
+    animation-duration: 0.5s;
   }
 
   .card::after {

@@ -1,20 +1,12 @@
 <loading progress="{{ progress }}" wx:if="{{show}}" bind:complete="complete" />
 
 <view class="container" wx:else>
-	<view class="earth ">
-		<view class="card">
-		{{ active.desc  }}
-		</view>
-		<view class="swiper">
-			<view
-			 wx:for="{{list}}"
-			 wx:key="desc"
-			 class="image {{active.id === item.id?'active':''}}"
-			 bindtap="change"
-			 data-item="{{item}}"
-			 style="background-image:{{item.src}}"
-			/>
-		</view>
-	</view>
+  <view class="earth ">
+    <view class=" card {{effect}}">
+      {{ active.desc }}
+    </view>
+    <view class="swiper">
+      <view wx:for="{{list}}" wx:key="desc" class="image {{active.id === item.id?'active':''}}" bindtap="change" data-item="{{item}}" style="background-image:{{item.src}}" />
+    </view>
+  </view>
 </view>
-

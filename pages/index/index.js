@@ -5,6 +5,7 @@ Page({
   behaviors: [loading],
   data: {
     active: {},
+    effect: "",
     list: [
       {
         src: `url("../../src/image/earth.png")`,
@@ -26,7 +27,7 @@ Page({
   complete() {
     this.closeLoading();
   },
-  change(event) {
+  async change(event) {
     const item = event.currentTarget.dataset.item;
     const { id } = item;
     if (id === this.data.active.id) {
@@ -35,6 +36,11 @@ Page({
     }
     this.setData({
       active: item,
+      effect: 'text-focus-out'
+    });
+    await new Promise(r => setTimeout(r, 600))
+    this.setData({
+      effect: 'text-focus-in'
     });
   },
   onLoad() {
