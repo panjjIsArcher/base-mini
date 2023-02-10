@@ -1,23 +1,26 @@
 const loading = require("../../behavior/loading");
+import { navigatoteTo } from "../../util/index";
+import { PATH } from "../../src/constants/path";
 Page({
   behaviors: [loading],
   data: {
     active: {},
-    list: [{
-      src: "../page/src/image/earth.png",
-      desc: "描述3",
-      id: 1
-    },
-    {
-      src: "../page/src/image/earth.png",
-      desc: "描述1",
-      id: 2
-    },
-    {
-      src: "../../src/image/earth.png",
-      desc: "描述2",
-      id: 3
-    },
+    list: [
+      {
+        src: `url("../../src/image/earth.png")`,
+        desc: "描述3",
+        id: 1,
+      },
+      {
+        src: `url("../../src/image/earth.png")`,
+        desc: "描述1",
+        id: 2,
+      },
+      {
+        src: `url("../../src/image/earth.png")`,
+        desc: "描述2",
+        id: 3,
+      },
     ],
   },
   complete() {
@@ -27,18 +30,20 @@ Page({
     const item = event.currentTarget.dataset.item;
     const { id } = item;
     if (id === this.data.active.id) {
-      return
+      navigatoteTo(PATH.GIS);
+      return;
     }
     this.setData({
-      active: item
-    })
+      active: item,
+    });
   },
   onLoad() {
     this.showLoading();
-    // 默认选中第一个list
+
+    const index = Math.floor(this.data.list.length / 2);
     this.setData({
-      active: this.data.list[0]
-    })
+      active: this.data.list[index],
+    });
   },
   onShow() {
     this.setData({

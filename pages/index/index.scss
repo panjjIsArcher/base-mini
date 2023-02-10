@@ -10,21 +10,56 @@
   right: 0;
   box-sizing: border-box;
 
-  .swiper {
+  .swiper,
+  .card {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .card {
+    height: 50vw;
+    width: 40vw;
+    background-color: $theme-color;
+    border-radius: 3vw;
+    top: 30.5%;
+
+
+  }
+
+  .card::after {
+    position: absolute;
+    left: 50%;
+    bottom: -11px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid $theme-color;
+    transform: translateX(-50%);
+
+  }
+
+  .swiper {
     display: flex;
     justify-content: center;
     align-items: centers;
     gap: 2vw;
 
-    image {
+    .image {
       width: 8vw;
       height: 8vw;
       margin: 0 1vw;
-      
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-color: red;
+      border-radius: 50%;
+      transition-property: transform;
+      transition-duration: 0.2s;
+      position: relative;
+      left: 0;
     }
 
     .active {
