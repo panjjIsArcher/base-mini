@@ -1,5 +1,6 @@
 const loading = require("../../behavior/loading");
-import { navigatoteTo } from "../../util/index"
+import { navigatoteTo } from "../../util/index";
+import { PATH } from "../../src/constants/path";
 Page({
   behaviors: [loading],
   data: {
@@ -29,7 +30,7 @@ Page({
     const item = event.currentTarget.dataset.item;
     const { id } = item;
     if (id === this.data.active.id) {
-      navigatoteTo();
+      navigatoteTo(PATH.GIS);
       return;
     }
     this.setData({

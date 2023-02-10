@@ -1,7 +1,7 @@
 import { isEmptyObj } from "./validate"
 
 export const navigatoteTo = async (path = "", param = {}) => {
-  let query = ""
+  let query = "";
   if (!isEmptyObj(param)) {
     query = "?" + transformObjToStr(param, "/")
   }
